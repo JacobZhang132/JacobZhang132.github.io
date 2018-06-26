@@ -1,13 +1,89 @@
+html, body
+  max-width: 100%
+  overflow-x: hidden
 
-.jzh1
+#jzh1
   font-family: "Arial Black" !important
+  font-size: 170px
   position: relative
-  animation: introFrame 2s ease-in-out 0s 1 normal forwards running
 
-  @keyframes introFrame
+  transition: color 5s
+
+#jzh1.anim
+  animation: introFrame1 1s ease-in-out 0s 1 normal forwards running
+
+
+  @keyframes introFrame1
     0%
       left: 120%
 
     100%
       left: 0%
+
+#jzh2
+  font-family: "Arial Black" !important
+  font-size: 170px
+  position: relative
+  visibility: hidden
+
+  transition: color 5s
+
+#jzh2.anim
+  animation: introFrame2 1s ease-in-out 1s 1 normal forwards running
+
+  @keyframes introFrame2
+    0%
+      left: -100%
+      visibility: visible
+    100%
+      left: 43%
+      visibility: visible
+
+#jzh3
+  font-family: "Arial Black" !important
+  font-size: 170px
+  position: relative
+  visibility: hidden
+
+  transition: color 5s
+
+#jzh3.anim
+  animation: introFrame3 1s ease-in-out 2s 1 normal forwards running
+
+  @keyframes introFrame3
+    0%
+      top: 120%
+      left: 23%
+      visibility: visible
+
+    100%
+      top: 0%
+      left: 23%
+      visibility: visible
+
+#sideNav
+  transition: background 5s
+
+#aboutA
+  transition: background 5s
+
+#awaA
+  transition: background 5s
+
+#eduA
+  transition: background 5s
+
+#expA
+  transition: background 5s
+
+#intA
+  transition: background 5s
+
+#skillA
+  transition: background 5s
+
+
+#navbarList li
+  position: relative
+  margin: 0 0 3px 0
 
