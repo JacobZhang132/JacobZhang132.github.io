@@ -25,7 +25,7 @@ html, body {
 #jzh2 {
   font-family: "Arial Black" !important;
   font-size: 170px;
-  position: relative;
+  position: absolute;
   visibility: hidden;
   transition: color 5s;
 }
@@ -39,7 +39,7 @@ html, body {
     visibility: visible;
   }
   100% {
-    left: 43%;
+    left: 50%;
     visibility: visible;
   }
 }
@@ -47,7 +47,7 @@ html, body {
 #jzh3 {
   font-family: "Arial Black" !important;
   font-size: 170px;
-  position: relative;
+  position: absolute;
   visibility: hidden;
   transition: color 5s;
 }
@@ -58,12 +58,12 @@ html, body {
 @keyframes introFrame3 {
   0% {
     top: 120%;
-    left: 23%;
+    left: 35%;
     visibility: visible;
   }
   100% {
-    top: 0%;
-    left: 23%;
+    top: 80%;
+    left: 35%;
     visibility: visible;
   }
 }
