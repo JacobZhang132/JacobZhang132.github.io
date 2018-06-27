@@ -4,7 +4,7 @@ html, body
 
 #jzh1
   font-family: "Arial Black" !important
-  font-size: 170px
+  font-size: 130px
   position: relative
 
   transition: color 5s
@@ -22,7 +22,7 @@ html, body
 
 #jzh2
   font-family: "Arial Black" !important
-  font-size: 170px
+  font-size: 130px
   position: absolute
   visibility: hidden
 
@@ -36,30 +36,95 @@ html, body
       left: -100%
       visibility: visible
     100%
-      left: 50%
+      left: 52.5%
       visibility: visible
 
-#jzh3
+#jzh31
   font-family: "Arial Black" !important
-  font-size: 170px
+  font-size: 130px
   position: absolute
   visibility: hidden
-
+  text-align: center
   transition: color 5s
 
-#jzh3.anim
-  animation: introFrame3 1s ease-in-out 2s 1 normal forwards running
+#jzh31.anim
+  animation: introFrame31 3s ease-in-out 2.5s 1 normal forwards running
 
-  @keyframes introFrame3
+
+  @keyframes introFrame31
     0%
-      top: 120%
-      left: 35%
+      top: 87%
+      left: 37%
+      opacity: 0
+      visibility: visible
+
+    33%, 66%
+      top: 70%
+      left: 37%
+      opacity: 1
       visibility: visible
 
     100%
-      top: 80%
-      left: 35%
+      top: 87%
+      left: 37%
+      opacity: 0
+      visibility: collapse
+
+#jzh32
+  font-family: "Arial Black" !important
+  font-size: 130px
+  position: absolute
+  visibility: collapse
+  text-align: center
+  transition: color 5s
+
+#jzh32.anim
+  animation: introFrame32 3s ease-in-out 5.5s 1 normal forwards running
+
+  @keyframes introFrame32
+    0%
+      top: 87%
+      left: 41%
+      opacity: 0
       visibility: visible
+
+    33%, 66%
+      top: 70%
+      left: 41%
+      opacity: 1
+      visibility: visible
+
+    100%
+      top: 87%
+      left: 41%
+      opacity: 0
+      visibility: collapse
+
+
+#jzh33
+  font-family: "Arial Black" !important
+  font-size: 130px
+  position: absolute
+  visibility: collapse
+  text-align: center
+  transition: color 5s
+
+#jzh33.anim
+  animation: introFrame33 3s ease-in-out 8.5s 1 normal forwards running
+
+  @keyframes introFrame33
+    0%
+      top: 87%
+      left: 37%
+      opacity: 0
+      visibility: visible
+
+    33%, 100%
+      top: 70%
+      left: 37%
+      opacity: 1
+      visibility: visible
+
 
 #sideNav
   transition: background 5s

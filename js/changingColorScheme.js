@@ -4,7 +4,9 @@ const changeColor = () => {
     document.getElementById("sideNav").style.backgroundColor = color;
     document.getElementById("jzh1").style.color = color;
     document.getElementById("jzh2").style.color = color;
-    document.getElementById("jzh3").style.color = color;
+    document.getElementById("jzh31").style.color = color;
+    document.getElementById("jzh32").style.color = color;
+    document.getElementById("jzh33").style.color = color;
 
     var dColor = ColorLuminance(color, -0.5);
     document.getElementById("aboutA").style.backgroundColor = dColor;
@@ -50,9 +52,17 @@ function playLogoAnim() {
     void document.getElementById("jzh2").offsetWidth;
     document.getElementById("jzh2").classList.add("anim");
 
-    document.getElementById("jzh3").classList.remove("anim");
-    void document.getElementById("jzh3").offsetWidth;
-    document.getElementById("jzh3").classList.add("anim");
+    document.getElementById("jzh31").classList.remove("anim");
+    void document.getElementById("jzh31").offsetWidth;
+    document.getElementById("jzh31").classList.add("anim");
+
+    document.getElementById("jzh32").classList.remove("anim");
+    void document.getElementById("jzh32").offsetWidth;
+    document.getElementById("jzh32").classList.add("anim");
+
+    document.getElementById("jzh33").classList.remove("anim");
+    void document.getElementById("jzh33").offsetWidth;
+    document.getElementById("jzh33").classList.add("anim");
 }
 
 function init() {
