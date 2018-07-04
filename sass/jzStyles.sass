@@ -152,3 +152,19 @@ html, body
   position: relative
   margin: 0 0 3px 0
 
+
+#profileHolder
+    position: relative
+    animation: rollIn 2s ease-in-out 1s 1 normal forwards running
+    transform-origin: 50% 50%
+    
+    @keyframes rollIn
+      from
+        //left: 0%
+        transform: rotate(1000deg)
+      to
+        //left: 50%
+        transform: rotate(0deg)
+    
+    
+    

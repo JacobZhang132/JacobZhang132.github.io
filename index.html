@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" con1tent="">
 
     <title>Jacob Zhang</title>
 
@@ -24,6 +24,8 @@
     <link href="css/resume.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/jzStyles.css">
+    <link rel="stylesheet" href="css/vballAnim.css">
+      <link rel="stylesheet" href="css/programming.css">
   </head>
 
   <body id="page-top">
@@ -31,7 +33,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="sideNav" style="background-color: green; max-width: 300px">
       <a class="navbar-brand js-scroll-trigger" href="#home" id="profileHolder">
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle  mb-2" src="img/profile.gif" alt="">
+          <img  id="profileHolder" class="img-fluid img-profile rounded-circle  mb-2" src="img/profile.gif" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,59 +87,62 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-section p-3 d-column" id="about">
         <div class="my-auto">
-          <!--
-          <h1 class="mb-0">Jacob
-            <span class="text-primary">Zhang</span>
-          </h1>
-          <div class="subheading mb-5">contact
-            <a href="mailto:name@email.com">name@email.com</a>
+          <div style="position: relative; height: 25%;">
+            <h1 class="mb-0">Jacob Zhang
+            </h1><br>
+            <h5>Email: jacobzhang132@gmail.com
+            </h5>
+            <p class="mb-5">Jacob Zhang is currently a high school student attending <b>Cupertino High School</b>.
+            <br>Jacob lives in <b>Cupertino, California</b> and loves to hang out with friends in his free time.
+            <br>Much of his time is spent playing volleyball and programming small computer/website games.</p>
           </div>
-          <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          -->
+            <br><br><br>
+          <div >
+              <h1 style="text-align: center" class="mb-3">Hobbies</h1>
+              <br><br>
+              <div style="display: flex; text-align: center">
+                  <div style="width: 50%;">
+                    <div class="container" id="vballLetters" style="overflow: hidden;">
+                      <div class="v letter">V</div>
+                      <div class="o letter">O</div>
+                      <div class="l1 letter">L</div>
+                      <div class="l2 letter">L</div>
+                      <div class="e letter">E</div>
+                      <div class="y letter">Y</div>
+                      <div class="b letter">B</div>
+                      <div class="a letter">A</div>
+                      <div class="l3 letter">L</div>
+                      <div class="l4 letter">L</div>
+                    </div>
+                  </div>
+                  <div style="width: 50%; position:relative" id="compDiv">
+                      <div class='console-container'>
+                          <span id='text'></span>
+                          <div class='console-underscore' id='console'>&#95;</div>
+                      </div>
+                  </div>
+              </div>
+              <div style="display: flex; vertical-align: bottom">
+                  <div style="width: 50%; height: 100px;">
+
+                      <div id="vballP" style="vertical-align: bottom"><img id="vball" src="img/vball.png"></div>
+
+                  </div>
+
+              </div>
+
+
+
+          </div>
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section class="resume-section p-3 flex-column" id="experience">
         <div class="my-auto">
-          <!--
-          <h2 class="mb-5">Experience</h2>
-
+          <h1 class="mb-0">Projects</h1>
+            <!--
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Senior Web Developer</h3>
@@ -339,7 +344,9 @@
 
 
     <script src="js/changingColorScheme.js"></script>
-
+    <script src="js/aboutPage.js"></script>
+      <script src="js/programming.js"></script>
+      
   </body>
 
 </html>
