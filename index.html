@@ -25,7 +25,8 @@
 
     <link rel="stylesheet" href="css/jzStyles.css">
     <link rel="stylesheet" href="css/vballAnim.css">
-      <link rel="stylesheet" href="css/programming.css">
+    <link rel="stylesheet" href="css/programming.css">
+
   </head>
 
   <body id="page-top">
@@ -33,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="sideNav" style="background-color: green; max-width: 300px">
       <a class="navbar-brand js-scroll-trigger" href="#home" id="profileHolder">
         <span class="d-none d-lg-block">
-          <img  id="profileHolder" class="img-fluid img-profile rounded-circle  mb-2" src="img/profile.gif" alt="">
+          <img  id="profileHolder" class="img-fluid img-profile rounded-circle  mb-2" src="img/profile_square1.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +46,7 @@
             <a class="nav-link js-scroll-trigger" href="#about" style="color: white;" id="aboutA">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience" style="color: white;" id="expA">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#experience" style="color: white;" id="expA">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education" style="color: white;" id="eduA">Education</a>
@@ -141,7 +142,51 @@
 
       <section class="resume-section p-3 flex-column" id="experience">
         <div class="my-auto">
-          <h1 class="mb-0">Projects</h1>
+          <h1 class="mb-0">Projects</h1><br>
+            <div>
+                <div style="display: flex; height: 590px">
+                    <div style="width: 50%; position: relative;">
+                        <div style="height: 50%; width: 100%; position: relative;">
+                          <h2 class="mb-1" style="padding-left: 5px">Rip-off Mario</h2>
+                          <p class="mb-1" style="padding-left: 5px"><b>Rip-off Mario</b> is a 2D side-scrolling platform game made in two weeks.
+                          The objective is to simply reach the yellow block. Throughout the level, there are
+                          traps that players must avoid.<br> Be careful! This game is unfair.</p>
+                          <h2 class="mb-0" align="center"><a href="https://jsbbvk.github.io/Platformer/Platform.html" target="_blank">Link to game</a> </h2>
+                          <p class="mb-1" style="position: absolute; bottom: 20px;">*The game takes some time to load in the sprites. Please wait patiently.</p>
+                        </div>
+                        <br>
+                        <div style="height: 50%; width: 100%; position: relative">
+                          <h2 class="mb-1" style="padding-left: 5px">Easy Speak</h2>
+                          <p class="mb-1" style="padding-left: 5px"><b>Easy Speak</b> is a chrome extension that enhances user
+                           interactivity in browsers. <b>Easy Speak</b> uses <i>Speech to Text Recognition</i>
+                            to act as a voice assistant AND to input user's speech into any text box.
+                          <br><b>This</b> is the new way to interact.</p>
+                          <h3 class="mb-1" align="center"><a href="https:// www.easyspeak.tech" target="_blank">Link to website</a></h3>
+                          <h3 class="mb-1" align="center"><a href="https://chrome.google.com/webstore/detail/easyspeak/ddjlgapaflfbkfndnhlehildjhegeomk" target="_blank">
+                            Link to extension
+                          </a> </h3>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 50%; position: relative">
+                      <div style="position:relative; height: 35%">
+                        <h2 class="mb-1" style="padding-left: 5px">Dropper</h2>
+                        <p class="mb-1" style="padding-left: 5px;">
+                          <b>Dropper</b> is still a work in progress. The aim of the game is to fall to the bottom of the screen.
+                           Each level is different and poses parkour challenges.
+                        </p>
+                        <h2 class="mb-1" align="center"><a href="https://jsbbvk.github.io/Quiz%20Game%20Template/Dropper.html" target="_blank">Link to game</a> </h2>
+                      </div>
+
+                      <div style="position:relative;">
+                        <canvas id="dropper_canvas" style="border: 1px solid black; width: 600px; height: 300px; display: block;">
+                        </canvas>
+                        <br>
+                        <p class="mb-1" align="center"><img src="img/arrow-up.png">Click the box for a demo<img src="img/arrow-up.png"></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
             <!--
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -346,6 +391,7 @@
     <script src="js/changingColorScheme.js"></script>
     <script src="js/aboutPage.js"></script>
       <script src="js/programming.js"></script>
+    <script src="js/Dropper.js"></script>
       
   </body>
 
