@@ -118,8 +118,8 @@ function init() {
 
     document.addEventListener("keydown", function(e) {
         if (lastTarget == canvas) {
-            console.log(e.keyCode);
-            console.log("A");
+            //console.log(e.keyCode);
+            //console.log("A");
             keys[e.keyCode] = true;
         }
     });
@@ -265,7 +265,7 @@ function drawScreen() {
                 //if (dir != null && dir != "b") console.log(dir);
                 if (dir === "l" || dir === "r") {
                     player.velX = 0;
-                    console.log("WHAT??");
+                    //console.log("WHAT??");
                     //toggle wall jumping
                     //player.jumping = false;
                 }else if (dir === "b") {
