@@ -1,19 +1,19 @@
 
 body {
-  background-color: #404660;
+  background-color: #b47f6f;
   font-family: "Montserrat", sans-serif;
 }
 
 .splash {
   height: 100vh;
   position:relative;
-  background-color: #404660;
+  background-color: #b47f6f;
 
   .center-box {
     position: absolute;
-    width: 70%;
+    width: 90%;
     height: 70%;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -46,6 +46,9 @@ body {
   }
 }
 
+#confetti-popper {
+  cursor: pointer;
+}
 
 .profile-wrapper {
   border-radius: 50%;
