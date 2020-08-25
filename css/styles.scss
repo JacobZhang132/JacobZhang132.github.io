@@ -1,0 +1,83 @@
+
+body {
+  background-color: #404660;
+  font-family: "Montserrat", sans-serif;
+}
+
+.splash {
+  height: 100vh;
+  position:relative;
+  background-color: #404660;
+
+  .center-box {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-column {
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+    color:#e6e6e6;
+
+    &:not(.no-column)::after {
+      content:"";
+      width: 2px;
+      height: 80px;
+      position: absolute;
+      background-color: white;
+      right: 0;
+      top: 30px;
+    }
+
+
+
+    .fab {
+      cursor: pointer;
+      &:hover {
+        color: #a4a4a4;
+      }
+    }
+  }
+}
+
+
+.profile-wrapper {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  -webkit-transition: background-image 1s ease-in-out;
+
+  background-image: url("../img/profile1.jpg");
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
